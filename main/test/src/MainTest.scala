@@ -25,4 +25,10 @@ class InputTests extends FunSuite {
     assertEquals(processInput(input), List("hállö", "wørld", "café", "ànd", "pâté"))
   }
 }
+
+
+class TranslationTests extends FunSuite {
+   test("Translate a single word input") {
+     assertEquals(translate("dog", "Englisch", "Deutsch"), "Hund")
+   }
 }

@@ -8,3 +8,7 @@ val removePunctuation: String => String = _.trim
   .replaceAll(" +", " ")
 
 val processInput: String => List[String] = (input) => splitLowerCase(removePunctuation(input))
+
+val translate: (String,String,String) => String = (word,sourceLang,targetLang) => "Not implemented"
+
+@main def main(input: String): Unit = { ??? }
