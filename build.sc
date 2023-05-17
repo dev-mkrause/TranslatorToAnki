@@ -1,6 +1,8 @@
+import $ivy.`com.goyeau::mill-scalafix::0.2.9`
+import com.goyeau.mill.scalafix.ScalafixModule
 import mill._, scalalib._, scalafmt._
 
-object main extends ScalaModule {
+object main extends ScalaModule with ScalafixModule {
   def scalaVersion = "3.2.2"
 
 
